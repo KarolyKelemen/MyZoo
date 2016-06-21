@@ -1,0 +1,415 @@
+!SESSION 2016-06-13 18:41:51.855 -----------------------------------------------
+eclipse.buildId=3.7.3.201602250940-RELEASE-e45
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide -data D:\Dev\SpringToolSuite\MyZooWorkspace -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-13 18:41:57.447
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Thrall'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.buildship.core 4 0 2016-06-13 18:42:47.959
+!MESSAGE Cannot read Gradle configuration for project myzoodata.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/myzoodata/.settings/gradle.prefs' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:267)
+	at org.eclipse.buildship.core.configuration.internal.ProjectConfigurationPersistence.readProjectConfiguration(ProjectConfigurationPersistence.java:122)
+	at org.eclipse.buildship.core.configuration.internal.DefaultProjectConfigurationManager.readProjectConfiguration(DefaultProjectConfigurationManager.java:101)
+	at org.eclipse.buildship.core.workspace.SynchronizeJavaWorkspaceProjectJob.synchronizeWorkspaceProject(SynchronizeJavaWorkspaceProjectJob.java:79)
+	at org.eclipse.buildship.core.workspace.SynchronizeJavaWorkspaceProjectJob.runToolingApiJobInWorkspace(SynchronizeJavaWorkspaceProjectJob.java:64)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob$1.run(ToolingApiWorkspaceJob.java:74)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:54)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob.runInWorkspace(ToolingApiWorkspaceJob.java:71)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-06-13 18:42:47.960
+!MESSAGE Resource '/myzoodata/.settings/gradle.prefs' does not exist.
+
+!ENTRY org.eclipse.buildship.core 4 0 2016-06-13 18:42:47.960
+!MESSAGE Synchronize Java workspace project myzoodata failed due to an error configuring Eclipse.
+!STACK 0
+org.eclipse.buildship.core.GradlePluginsRuntimeException: Cannot read Gradle configuration for project myzoodata.
+	at org.eclipse.buildship.core.configuration.internal.ProjectConfigurationPersistence.readProjectConfiguration(ProjectConfigurationPersistence.java:135)
+	at org.eclipse.buildship.core.configuration.internal.DefaultProjectConfigurationManager.readProjectConfiguration(DefaultProjectConfigurationManager.java:101)
+	at org.eclipse.buildship.core.workspace.SynchronizeJavaWorkspaceProjectJob.synchronizeWorkspaceProject(SynchronizeJavaWorkspaceProjectJob.java:79)
+	at org.eclipse.buildship.core.workspace.SynchronizeJavaWorkspaceProjectJob.runToolingApiJobInWorkspace(SynchronizeJavaWorkspaceProjectJob.java:64)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob$1.run(ToolingApiWorkspaceJob.java:74)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:54)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob.runInWorkspace(ToolingApiWorkspaceJob.java:71)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/myzoodata/.settings/gradle.prefs' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:267)
+	at org.eclipse.buildship.core.configuration.internal.ProjectConfigurationPersistence.readProjectConfiguration(ProjectConfigurationPersistence.java:122)
+	... 8 more
+
+!ENTRY org.eclipse.ui 2 2 2016-06-13 18:43:35.759
+!MESSAGE Invalid preference category path: org.nodeclipse.enide.gradle.preferences.GradlePreferencePage (bundle: org.nodeclipse.enide.editors.gradle, page: org.nodeclipse.enide.editors.gradle.preferences.GradleEditorPreferencePage)
+
+!ENTRY org.eclipse.buildship.core 4 0 2016-06-13 18:45:50.739
+!MESSAGE Synchronize Gradle root project at D:\Dev\SpringToolSuite\StsWorkspace\myzoodata with workspace failed due to an error configuring Eclipse.
+!STACK 0
+org.eclipse.buildship.core.GradlePluginsRuntimeException: Cannot include existing Eclipse project myzoodata.
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceOperations.includeProject(DefaultWorkspaceOperations.java:218)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.addExistingEclipseProjectToWorkspace(DefaultWorkspaceGradleOperations.java:218)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.synchronizeNonWorkspaceProject(DefaultWorkspaceGradleOperations.java:199)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.synchronizeGradleProjectWithWorkspaceProject(DefaultWorkspaceGradleOperations.java:110)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.synchronizeGradleBuildWithWorkspace(DefaultWorkspaceGradleOperations.java:71)
+	at org.eclipse.buildship.core.workspace.SynchronizeGradleProjectJob.runToolingApiJobInWorkspace(SynchronizeGradleProjectJob.java:77)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob$1.run(ToolingApiWorkspaceJob.java:74)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:54)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob.runInWorkspace(ToolingApiWorkspaceJob.java:71)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Workspace already contains a project with name myzoodata.
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:150)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceOperations.includeProject(DefaultWorkspaceOperations.java:198)
+	... 10 more
+
+!ENTRY org.eclipse.buildship.core 4 0 2016-06-13 18:45:50.755
+!MESSAGE Synchronize workspace projects with Gradle counterparts failed due to an error configuring Eclipse.
+!STACK 0
+org.eclipse.buildship.core.GradlePluginsRuntimeException: Cannot include existing Eclipse project myzoodata.
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceOperations.includeProject(DefaultWorkspaceOperations.java:218)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.addExistingEclipseProjectToWorkspace(DefaultWorkspaceGradleOperations.java:218)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.synchronizeNonWorkspaceProject(DefaultWorkspaceGradleOperations.java:199)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.synchronizeGradleProjectWithWorkspaceProject(DefaultWorkspaceGradleOperations.java:110)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.synchronizeGradleBuildWithWorkspace(DefaultWorkspaceGradleOperations.java:71)
+	at org.eclipse.buildship.core.workspace.SynchronizeGradleProjectJob.runToolingApiJobInWorkspace(SynchronizeGradleProjectJob.java:77)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob$1.run(ToolingApiWorkspaceJob.java:74)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:54)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob.runInWorkspace(ToolingApiWorkspaceJob.java:71)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.lang.IllegalStateException: Workspace already contains a project with name myzoodata.
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:150)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceOperations.includeProject(DefaultWorkspaceOperations.java:198)
+	... 10 more
+
+!ENTRY org.eclipse.buildship.core 4 0 2016-06-13 18:46:43.668
+!MESSAGE Cannot read Gradle configuration for project myzoodata.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/myzoodata/.settings/gradle.prefs' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:267)
+	at org.eclipse.buildship.core.configuration.internal.ProjectConfigurationPersistence.readProjectConfiguration(ProjectConfigurationPersistence.java:122)
+	at org.eclipse.buildship.core.configuration.internal.DefaultProjectConfigurationManager.readProjectConfiguration(DefaultProjectConfigurationManager.java:101)
+	at org.eclipse.buildship.core.workspace.SynchronizeJavaWorkspaceProjectJob.synchronizeWorkspaceProject(SynchronizeJavaWorkspaceProjectJob.java:79)
+	at org.eclipse.buildship.core.workspace.SynchronizeJavaWorkspaceProjectJob.runToolingApiJobInWorkspace(SynchronizeJavaWorkspaceProjectJob.java:64)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob$1.run(ToolingApiWorkspaceJob.java:74)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:54)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob.runInWorkspace(ToolingApiWorkspaceJob.java:71)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2016-06-13 18:46:43.668
+!MESSAGE Resource '/myzoodata/.settings/gradle.prefs' does not exist.
+
+!ENTRY org.eclipse.buildship.core 4 0 2016-06-13 18:46:43.669
+!MESSAGE Synchronize Java workspace project myzoodata failed due to an error configuring Eclipse.
+!STACK 0
+org.eclipse.buildship.core.GradlePluginsRuntimeException: Cannot read Gradle configuration for project myzoodata.
+	at org.eclipse.buildship.core.configuration.internal.ProjectConfigurationPersistence.readProjectConfiguration(ProjectConfigurationPersistence.java:135)
+	at org.eclipse.buildship.core.configuration.internal.DefaultProjectConfigurationManager.readProjectConfiguration(DefaultProjectConfigurationManager.java:101)
+	at org.eclipse.buildship.core.workspace.SynchronizeJavaWorkspaceProjectJob.synchronizeWorkspaceProject(SynchronizeJavaWorkspaceProjectJob.java:79)
+	at org.eclipse.buildship.core.workspace.SynchronizeJavaWorkspaceProjectJob.runToolingApiJobInWorkspace(SynchronizeJavaWorkspaceProjectJob.java:64)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob$1.run(ToolingApiWorkspaceJob.java:74)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:54)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob.runInWorkspace(ToolingApiWorkspaceJob.java:71)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/myzoodata/.settings/gradle.prefs' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:267)
+	at org.eclipse.buildship.core.configuration.internal.ProjectConfigurationPersistence.readProjectConfiguration(ProjectConfigurationPersistence.java:122)
+	... 8 more
+
+!ENTRY org.eclipse.jdt.launching 4 4 2016-06-13 18:47:24.651
+!MESSAGE Unable to locate executable for Java SE 1.8
+!STACK 1
+org.eclipse.core.runtime.CoreException: Unable to locate executable for Java SE 1.8
+	at org.eclipse.jdt.launching.AbstractVMRunner.abort(AbstractVMRunner.java:53)
+	at org.eclipse.jdt.internal.launching.StandardVMRunner.constructProgramString(StandardVMRunner.java:262)
+	at org.eclipse.jdt.internal.launching.StandardVMRunner.run(StandardVMRunner.java:363)
+	at org.eclipse.jdt.launching.AbstractVMInstall.evaluateSystemProperties(AbstractVMInstall.java:395)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironmentAnalyzer.isFoundation1_0(ExecutionEnvironmentAnalyzer.java:159)
+	at org.eclipse.jdt.internal.launching.environments.ExecutionEnvironmentAnalyzer.analyze(ExecutionEnvironmentAnalyzer.java:98)
+	at org.eclipse.jdt.internal.launching.environments.Analyzer.analyze(Analyzer.java:41)
+	at org.eclipse.jdt.internal.launching.environments.EnvironmentsManager.analyze(EnvironmentsManager.java:344)
+	at org.eclipse.jdt.internal.launching.environments.EnvironmentsManager.vmAdded(EnvironmentsManager.java:386)
+	at org.eclipse.jdt.internal.launching.environments.EnvironmentsManager.vmChanged(EnvironmentsManager.java:374)
+	at org.eclipse.jdt.launching.JavaRuntime.fireVMChanged(JavaRuntime.java:2380)
+	at org.eclipse.jdt.launching.AbstractVMInstall.setName(AbstractVMInstall.java:124)
+	at org.eclipse.buildship.core.workspace.internal.EclipseVmUtil.registerNewVM(EclipseVmUtil.java:69)
+	at org.eclipse.buildship.core.workspace.internal.EclipseVmUtil.findOrRegisterVM(EclipseVmUtil.java:44)
+	at org.eclipse.buildship.core.workspace.internal.JavaSourceSettingsUpdater.update(JavaSourceSettingsUpdater.java:67)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.synchronizeOpenWorkspaceProject(DefaultWorkspaceGradleOperations.java:160)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.synchronizeWorkspaceProject(DefaultWorkspaceGradleOperations.java:126)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.synchronizeGradleProjectWithWorkspaceProject(DefaultWorkspaceGradleOperations.java:108)
+	at org.eclipse.buildship.core.workspace.internal.DefaultWorkspaceGradleOperations.synchronizeGradleBuildWithWorkspace(DefaultWorkspaceGradleOperations.java:71)
+	at org.eclipse.buildship.core.workspace.SynchronizeGradleProjectJob.runToolingApiJobInWorkspace(SynchronizeGradleProjectJob.java:77)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob$1.run(ToolingApiWorkspaceJob.java:74)
+	at org.eclipse.buildship.core.util.progress.ToolingApiInvoker.invoke(ToolingApiInvoker.java:54)
+	at org.eclipse.buildship.core.util.progress.ToolingApiWorkspaceJob.runInWorkspace(ToolingApiWorkspaceJob.java:71)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.launching 4 150 2016-06-13 18:47:24.652
+!MESSAGE Unable to locate executable for Java SE 1.8
+!SESSION 2016-06-13 18:52:03.270 -----------------------------------------------
+eclipse.buildId=3.7.3.201602250940-RELEASE-e45
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-13 18:52:10.240
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Thrall'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-13 20:52:07.567 -----------------------------------------------
+eclipse.buildId=3.7.3.201602250940-RELEASE-e45
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -product org.springsource.sts.ide -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide -product org.springsource.sts.ide -data D:\Dev\SpringToolSuite\MyZooWorkspace -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-13 20:52:13.528
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Thrall'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-20 18:40:07.343 -----------------------------------------------
+eclipse.buildId=3.7.3.201602250940-RELEASE-e45
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide -data D:\Dev\SpringToolSuite\MyZooWorkspace -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-20 18:40:13.476
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Thrall'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-20 18:45:01.380 -----------------------------------------------
+eclipse.buildId=3.7.3.201602250940-RELEASE-e45
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-20 18:45:09.353
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Thrall'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-06-20 18:47:49.621 -----------------------------------------------
+eclipse.buildId=3.7.3.201602250940-RELEASE-e45
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-20 18:47:55.614
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Thrall'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2016-06-20 18:48:33.257
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:794)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:323)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Could not delete 'D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:135)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:443)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:850)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1835)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:781)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:323)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Could not delete: D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata.
+Contains: Could not delete 'D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata'.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2016-06-20 18:48:33.257
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2016-06-20 18:48:33.257
+!MESSAGE Could not delete 'D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:135)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:443)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:850)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1835)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:781)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:323)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Could not delete: D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2016-06-20 18:48:33.257
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2016-06-20 18:48:33.257
+!MESSAGE Could not delete: D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2016-06-20 18:48:33.257
+!MESSAGE Could not delete 'D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata'.
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2016-06-20 18:48:44.114
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:794)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:323)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Could not delete 'D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:135)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:443)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:850)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1835)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:781)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:323)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Could not delete: D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata.
+Contains: Could not delete 'D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata'.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2016-06-20 18:48:44.114
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2016-06-20 18:48:44.114
+!MESSAGE Could not delete 'D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:135)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:443)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:850)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1835)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:781)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:323)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Could not delete: D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2016-06-20 18:48:44.114
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2016-06-20 18:48:44.114
+!MESSAGE Could not delete: D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2016-06-20 18:48:44.114
+!MESSAGE Could not delete 'D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata'.
+
+!ENTRY org.springsource.ide.eclipse.commons.frameworks.core 4 0 2016-06-20 18:49:22.038
+!MESSAGE IOException: Data already exists at location and it could not be deleted: D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.springframework.ide.eclipse.buildship.BuildshipImportStrategy$1.run(BuildshipImportStrategy.java:128)
+	at org.springframework.ide.eclipse.wizard.gettingstarted.boot.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:255)
+	at org.springframework.ide.eclipse.wizard.gettingstarted.boot.NewSpringBootWizard$1.run(NewSpringBootWizard.java:249)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: Data already exists at location and it could not be deleted: D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata
+	at org.springframework.ide.eclipse.wizard.gettingstarted.content.CodeSet.createAt(CodeSet.java:169)
+	at org.springframework.ide.eclipse.buildship.BuildshipImportStrategy$1.run(BuildshipImportStrategy.java:104)
+	... 3 more
+Root exception:
+java.io.IOException: Data already exists at location and it could not be deleted: D:\Dev\SpringToolSuite\MyZooWorkspace\myzoodata
+	at org.springframework.ide.eclipse.wizard.gettingstarted.content.CodeSet.createAt(CodeSet.java:169)
+	at org.springframework.ide.eclipse.buildship.BuildshipImportStrategy$1.run(BuildshipImportStrategy.java:104)
+	at org.springframework.ide.eclipse.wizard.gettingstarted.boot.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:255)
+	at org.springframework.ide.eclipse.wizard.gettingstarted.boot.NewSpringBootWizard$1.run(NewSpringBootWizard.java:249)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2016-06-20 18:50:32.696 -----------------------------------------------
+eclipse.buildId=3.7.3.201602250940-RELEASE-e45
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-06-20 18:50:37.971
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Thrall'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-06-20 18:52:18.875
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin com.vmware.vfabric.ide.eclipse.tcserver.core.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-06-20 18:52:18.875
+!MESSAGE Project facet grails.app has not been defined. It is used in plugin org.eclipse.cft.server.branding.core.
