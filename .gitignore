@@ -1,9 +1,11 @@
 .gradle/
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
 /build/
 /*/build/
 
 .nb-gradle/
 .nb-gradle-properties
 
-RemoteSystemsTempFiles/
-.metadata/
+MyZooWorkspace/

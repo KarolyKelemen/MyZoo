@@ -1,0 +1,5 @@
+FROM dockering/oracle-java8
+MAINTAINER karesz.kelemen@gmail.com
+EXPOSE ${project.docker.serverPort}
+ADD ${project.jar.archiveName} /opt/${project.name}.jar
+ENTRYPOINT ["java", "-Dsqlserver=${project.mysqlServerAddr}", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/opt/${project.name}.jar"]

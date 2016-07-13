@@ -1,11 +1,11 @@
 {
   "1.0": {
-    "project_path": ":",
+    "project_path": ":myzoodata",
     "project_dir": "D:\\Dev\\SpringToolSuite\\MyZooWorkspace\\myzoodata",
-    "connection_project_dir": "D:\\Dev\\SpringToolSuite\\MyZooWorkspace\\myzoodata",
+    "connection_project_dir": "D:\\Dev\\SpringToolSuite\\MyZooWorkspace",
     "connection_gradle_user_home": null,
-    "connection_gradle_distribution": "GRADLE_DISTRIBUTION(WRAPPER)",
-    "connection_java_home": null,
+    "connection_gradle_distribution": "GRADLE_DISTRIBUTION(VERSION(2.13))",
+    "connection_java_home": "C:\\jdk1_8_0_74",
     "connection_jvm_arguments": "",
     "connection_arguments": ""
   }
